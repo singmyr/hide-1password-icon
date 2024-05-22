@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Hide 1Password Icon",
+    "version": "1.0",
+
+    "homepage_url": "https://github.com/singmyr/hide-1password-icon",
+    "description": "Hide 1Password icon in input fields.",
+
+    "content_scripts": [
+        {
+            "run_at": "document_idle",
+            "matches": ["<all_urls>"],
+            "js": ["hide-1password.js"]
+        }
+    ]
+}
